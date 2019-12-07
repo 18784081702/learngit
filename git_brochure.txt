@@ -2,6 +2,8 @@ mkdir 文件夹
 cd 文件夹
 git init
 
+git remote add origin  “https://XXXX.git”//网址连接
+
 //touch 文件名//
 git add  //保存修改
 git commit -m "备注内容" //写好备注准备推送
@@ -9,5 +11,7 @@ git pull origin master //在推送前看看别人有没有推送
 git status //查看是否有冲突如果有根据路径找到文件进行修改（这个是提示你下一步做什么）
 git push -u origin master //修改完成推送
 
-
-hhhh
+git status //时刻查看仓库状态
+git diff 文件名//查看修改内容
+git log //作出修改的日志
+git log --pretty=oneline//简化日志
